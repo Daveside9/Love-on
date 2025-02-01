@@ -1,3 +1,4 @@
+/* Reservation Form Styling */
 .reservation-form {
   display: flex;
   flex-direction: column;
@@ -47,4 +48,52 @@
   border: none;
   cursor: pointer;
   margin-top: 10px;
+}
+
+/* Responsive Styling for Reservation Form */
+@media (max-width: 768px) {
+  .reservation-form {
+    padding: 15px; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Allow the form to take up full width on smaller devices */
+  }
+
+  .reservation-form label {
+    font-size: 14px; /* Smaller label text */
+  }
+
+  .reservation-form input,
+  .reservation-form select {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .package-details {
+    padding: 12px;
+  }
+
+  .package-details h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .reservation-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation-form {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+
+  .reservation-form input,
+  .reservation-form select {
+    padding: 5px;
+    font-size: 12px; /* Even smaller font size */
+  }
+
+  .reservation-form button {
+    padding: 6px;
+    font-size: 12px; /* Further reduce font size */
+  }
 }

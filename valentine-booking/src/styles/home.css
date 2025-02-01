@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('https://cdn.pixabay.com/photo/2024/07/10/20/13/ai-generated-8886602_1280.jpg');
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-attachment: fixed;
     color: hsl(249, 98%, 50%);
     margin: 2;
@@ -163,4 +163,94 @@ nav {
 
 .contact-btn a:nth-child(2):hover {
     background-color: #c11d4600; /* Gmail Dark Red */
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablet and Mobile View */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Full width container */
+        margin: 20px;
+        padding: 10px;
+    }
+
+    nav {
+        top: 5px;
+        right: 5px;
+        gap: 5px;
+    }
+
+    .reservation-btn, .home-btn, .tour-btn button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .booking-form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .contact-us {
+        bottom: 10px;
+        left: 10px;
+        gap: 8px;
+    }
+
+    .contact-btn a {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .Star Rating Section {
+        bottom: 10px;
+        right: 10px;
+        max-width: 250px;
+    }
+
+    .text-container {
+        margin-top: 50px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation-btn, .home-btn, .tour-btn button {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .booking-form button {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .contact-btn a {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .Star Rating Section {
+        bottom: 5px;
+        right: 5px;
+        max-width: 200px;
+    }
+
+    .text-container {
+        margin-top: 30px;
+        padding: 5px;
+    }
 }

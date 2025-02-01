@@ -5,10 +5,10 @@ body {
     padding: 0;
     background-color: #390ff500; /* Default background color for all pages */
     color: #5d0ef1; /* Dark text for readability */
-  }
-  
-  /* Tour Page Container (with Fullscreen Background Image) */
-  .tour-container {
+}
+
+/* Tour Page Container (with Fullscreen Background Image) */
+.tour-container {
     padding: 30px;
     background-image: url('https://cdn.pixabay.com/photo/2023/12/08/19/51/ai-generated-8438037_1280.jpg'); /* Tour page background */
     background-size: cover; /* Ensure the image covers the full background */
@@ -21,35 +21,35 @@ body {
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
     flex-direction: column; /* Stack content */
-  }
-  
-  /* Page Title */
-  .tour-container h1 {
+}
+
+/* Page Title */
+.tour-container h1 {
     text-align: center;
     color: #f80606; /* Valentine's Day red */
     font-size: 3rem;
     margin-bottom: 20px;
-  }
-  
-  /* Subsection Titles */
-  .tour-content h2 {
+}
+
+/* Subsection Titles */
+.tour-content h2 {
     font-size: 2rem;
     color: #f51313; /* Red for section headings */
     margin-top: 30px;
     text-align: center;
-  }
-  
-  /* Paragraph Styles */
-  .tour-content p {
+}
+
+/* Paragraph Styles */
+.tour-content p {
     font-size: 1rem; /* Fixed the font-size */
     line-height: 1.8;
     margin: 15px 0;
     color: #fc0808; /* White text color */
     text-align: left;
-  }
-  
-  /* Flexbox Layout for Tour Images */
-  .tour-content {
+}
+
+/* Flexbox Layout for Tour Images */
+.tour-content {
     display: flex;
     flex-wrap: wrap; /* Allow the items to wrap on small screens */
     justify-content: space-between; /* Distribute images evenly */
@@ -58,39 +58,19 @@ body {
     background-color: rgba(236, 7, 7, 0); /* Semi-transparent dark background for content */
     border-radius: 10px;
     margin-top: 40px;
-  }
-  
-  /* Image Styling */
-  .tour-image {
+}
+
+/* Image Styling */
+.tour-image {
     width: 45%; /* Each image will take up 45% of the width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: block; /* left the images */
     margin: 20px 0; /* Space around the images */
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .tour-container {
-      padding: 15px;
-    }
-  
-    .tour-container h1 {
-      font-size: 2rem; /* Smaller font size for mobile */
-    }
-  
-    .tour-content h2 {
-      font-size: 1.5rem; /* Smaller section titles */
-    }
-  
-    .tour-image {
-      width: 100%; /* Ensure images take up the full width on small devices */
-      margin-bottom: 15px; /* Add space between images */
-    }
-  }
-  
-  /* Home Button Styling */
+}
+
+/* Home Button Styling */
 .home-button {
     background-color: #6264f300; /* Button color */
     color: #f30a0a; /* Text color */
@@ -101,9 +81,52 @@ body {
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth transition */
     margin-top: 20px; /* Space above the button */
-  }
-  
-  .home-button:hover {
+}
+
+.home-button:hover {
     background-color: #4e52d000; /* Darker shade on hover */
-  }
-  
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .tour-container {
+        padding: 15px;
+    }
+
+    .tour-container h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .tour-content h2 {
+        font-size: 1.5rem; /* Smaller section titles */
+    }
+
+    .tour-image {
+        width: 100%; /* Ensure images take up the full width on small devices */
+        margin-bottom: 15px; /* Add space between images */
+    }
+
+    .home-button {
+        font-size: 1rem; /* Smaller button text */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .tour-container h1 {
+        font-size: 1.8rem; /* Even smaller font size for very small screens */
+    }
+
+    .tour-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .tour-image {
+        width: 100%; /* Full width for images on very small screens */
+    }
+
+    .home-button {
+        font-size: 0.9rem; /* Further reduce font size */
+        padding: 6px 12px; /* Smaller button padding */
+    }
+}
