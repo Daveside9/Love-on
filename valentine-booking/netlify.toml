@@ -1,0 +1,11 @@
+[build]
+  # The folder where the built static files are stored (default is 'build' for Create React App)
+  publish = "build"  # Make sure this matches your build output folder
+  # The command to build your site (default for Create React App is 'npm run build')
+  command = "npm run build"
+
+[[redirects]]
+  # Optional: Example of a redirect rule
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
