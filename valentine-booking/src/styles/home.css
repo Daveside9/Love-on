@@ -154,11 +154,11 @@ nav {
 }
 
 .contact-btn a:hover {
-    background-color: #220ce900; /* WhatsApp Dark Green */
+    background-color: #210af700; /* WhatsApp Dark Green */
 }
 
 .contact-btn a:nth-child(2) {
-    background-color: #d4453800; /* Gmail Red */
+    background-color: #d445382d; /* Gmail Red */
 }
 
 .contact-btn a:nth-child(2):hover {
