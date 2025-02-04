@@ -88,9 +88,11 @@ body {
 }
 
 /* Responsive Styling */
+
+/* Tablet View (up to 768px) */
 @media (max-width: 768px) {
     .tour-container {
-        padding: 15px;
+        padding: 15px; /* Adjust padding for smaller screens */
     }
 
     .tour-container h1 {
@@ -112,13 +114,14 @@ body {
     }
 }
 
+/* Mobile View (up to 480px) */
 @media (max-width: 480px) {
     .tour-container h1 {
         font-size: 1.8rem; /* Even smaller font size for very small screens */
     }
 
     .tour-content h2 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Smaller subsection title */
     }
 
     .tour-image {
@@ -128,5 +131,29 @@ body {
     .home-button {
         font-size: 0.9rem; /* Further reduce font size */
         padding: 6px 12px; /* Smaller button padding */
+    }
+}
+
+/* Additional Media Query for very small devices (320px and below) */
+@media (max-width: 320px) {
+    .tour-container {
+        padding: 10px; /* Reduce padding on extra small screens */
+    }
+
+    .tour-container h1 {
+        font-size: 1.6rem; /* Smaller heading for very small screens */
+    }
+
+    .tour-content h2 {
+        font-size: 1rem; /* Adjust heading size for small devices */
+    }
+
+    .tour-image {
+        width: 100%; /* Ensure full-width images */
+    }
+
+    .home-button {
+        font-size: 0.8rem; /* Smaller font size for tiny devices */
+        padding: 5px 10px; /* Reduce button padding */
     }
 }

@@ -51,6 +51,8 @@
 }
 
 /* Responsive Styling for Reservation Form */
+
+/* Tablet View (up to 768px) */
 @media (max-width: 768px) {
   .reservation-form {
     padding: 15px; /* Adjust padding for smaller screens */
@@ -81,6 +83,7 @@
   }
 }
 
+/* Mobile View (up to 480px) */
 @media (max-width: 480px) {
   .reservation-form {
     padding: 10px; /* Reduce padding for very small screens */
@@ -95,5 +98,39 @@
   .reservation-form button {
     padding: 6px;
     font-size: 12px; /* Further reduce font size */
+  }
+
+  .package-details {
+    padding: 10px;
+  }
+
+  .package-details h3 {
+    font-size: 1.1rem; /* Adjust heading size for small screens */
+  }
+}
+
+/* Additional Media Query for very small devices (320px and below) */
+@media (max-width: 320px) {
+  .reservation-form {
+    padding: 8px; /* Further reduce padding */
+  }
+
+  .reservation-form input,
+  .reservation-form select {
+    padding: 4px;
+    font-size: 10px; /* Smaller font for tiny screens */
+  }
+
+  .reservation-form button {
+    padding: 4px;
+    font-size: 10px; /* Smaller button for tiny screens */
+  }
+
+  .package-details {
+    padding: 8px;
+  }
+
+  .package-details h3 {
+    font-size: 1rem; /* Smaller heading size */
   }
 }

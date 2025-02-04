@@ -1,13 +1,12 @@
 /* Existing styles for the page (unchanged) */
-
 body {
     font-family: Arial, sans-serif;
     background-image: url('https://cdn.pixabay.com/photo/2024/07/10/20/13/ai-generated-8886602_1280.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: hsl(249, 98%, 50%);
-    margin: 2;
+    color: hsl(231, 90%, 48%);
+    margin: 0;
     padding: 0;
     position: center;
 }
@@ -15,10 +14,10 @@ body {
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background: rgb(45, 3, 252);
+    background: rgb(7, 3, 252);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(7, 3, 231);
+    box-shadow: 0 4px 8px rgb(3, 3, 231);
     text-align: center;
 }
 
@@ -27,7 +26,7 @@ nav {
     top: 10px;
     right: 20px;
     display: flex;
-    gap: 10px; /* Adds space between the buttons */
+    gap: 10px;
 }
 
 .reservation-btn, .home-btn, .tour-btn button {
@@ -75,13 +74,39 @@ nav {
     background-color: #1237da;
 }
 
-nav {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    display: flex;
-    gap: 20px; /* Increases space between the two buttons */
-}
+/* Call-to-Action Container */
+.cta-container {
+    background-color: rgba(51, 243, 25, 0.8); /* Light red background for emphasis */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0); /* Adds subtle shadow for depth */
+  }
+  
+  /* Call-to-Action Text */
+  .cta-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #26f00b; /* White text for high contrast */
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  /* Make the text responsive for mobile screens */
+  @media (max-width: 768px) {
+    .cta-text {
+      font-size: 1rem; /* Adjust font size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cta-text {
+      font-size: 0.9rem; /* Further adjust font size for very small screens */
+    }
+  }  
 
 .tour-btn {
     display: inline-block;
@@ -134,15 +159,17 @@ nav {
 /* Contact Us Button Styles - Positioned at the bottom left */
 .contact-us {
     position: fixed;
-    bottom: 20px; /* 20px from the bottom */
-    left: 20px; /* 20px from the left */
+    bottom: 20px;
+    left: 20px;
     display: flex;
+    color: rgb(17, 21, 240);
+    font-size: 22px;
     flex-direction: column;
-    gap: 10px; /* Space between the buttons */
+    gap: 10px;
 }
 
 .contact-btn a {
-    background-color: #1505f700; /* WhatsApp Green */
+    background-color: #1505f700;
     color: rgb(9, 23, 216);
     padding: 12px 30px;
     font-size: 16px;
@@ -154,15 +181,15 @@ nav {
 }
 
 .contact-btn a:hover {
-    background-color: #210af700; /* WhatsApp Dark Green */
+    background-color: #220af7;
 }
 
 .contact-btn a:nth-child(2) {
-    background-color: #d445382d; /* Gmail Red */
+    background-color: #3b38d4;
 }
 
 .contact-btn a:nth-child(2):hover {
-    background-color: #c11d4600; /* Gmail Dark Red */
+    background-color: #2d1dc1;
 }
 
 /* Media Queries for responsiveness */
@@ -170,7 +197,7 @@ nav {
 /* Tablet and Mobile View */
 @media (max-width: 768px) {
     .container {
-        max-width: 100%; /* Full width container */
+        max-width: 100%;
         margin: 20px;
         padding: 10px;
     }
@@ -221,6 +248,7 @@ nav {
     }
 }
 
+/* Large Phone View */
 @media (max-width: 480px) {
     .reservation-btn, .home-btn, .tour-btn button {
         font-size: 10px;
@@ -252,5 +280,22 @@ nav {
     .text-container {
         margin-top: 30px;
         padding: 5px;
+    }
+}
+
+/* Additional Media Query for very small devices */
+@media (max-width: 320px) {
+    .reservation-btn, .home-btn, .tour-btn button {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+
+    .contact-btn a {
+        padding: 6px 18px;
+        font-size: 10px;
+    }
+
+    .Star Rating Section {
+        max-width: 180px;
     }
 }
