@@ -46,7 +46,7 @@ function ReservationForm() {
           {reservationType === "Wedding proposal" && (
             <iframe
               src={weddingProposalFormUrl}
-              width="640"
+              width="500"
               height="1144"
               frameborder="0"
               marginheight="0"
@@ -60,7 +60,7 @@ function ReservationForm() {
           {reservationType === "Couples Night Out" && (
             <iframe
               src={couplesNightOutFormUrl}
-              width="640"
+              width="500"
               height="1144"
               frameborder="0"
               marginheight="0"
